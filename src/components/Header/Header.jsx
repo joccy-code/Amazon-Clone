@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import classes from "./Header.module.css";
 import { IoIosSearch } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 import { FaCaretDown } from "react-icons/fa";
@@ -8,9 +8,9 @@ import { IoCartOutline } from "react-icons/io5";
 const Header = () => {
   return (
     <>
-      <header className="header">
-        <div className="container">
-          <div className="nav-1">
+      <header className={classes.header}>
+        <div className={classes.container}>
+          <div className={classes.nav_1}>
             <div>
               <a href="#">
                 <img
@@ -19,18 +19,18 @@ const Header = () => {
                 />
               </a>
             </div>
-            <div className="location">
-              <p className="deliver">Deliver to </p>
+            <div className={classes.location}>
+              <p className={classes.deliver}>Deliver to </p>
 
-              <p className="ethiopia">
+              <p className={classes.ethiopia}>
                 <CiLocationOn />
                 Ethiopia
               </p>
             </div>
           </div>
-          <div className="nav-2">
-            <div className="nav__options">
-              <select name="department" id="all">
+          <div className={classes.nav_2}>
+            <div className={classes.nav_options}>
+              <select name="department" id={classes.all}>
                 <option value="department">All </option>
                 <option value="arts">Arts & Crafts</option>
                 <option value="automotive">Automotive</option>
@@ -52,7 +52,7 @@ const Header = () => {
                 <option value="music">Music, CDs & Vinyl</option>
               </select>
             </div>
-            <div className="search-input">
+            <div className={classes.search_input}>
               <input
                 type="text"
                 name="search"
@@ -60,12 +60,12 @@ const Header = () => {
                 placeholder="Search Amazon"
               />
             </div>
-            <div className="search-icon">
-              <IoIosSearch className="search-icon" />
+            <div className={classes.search_icon}>
+              <IoIosSearch className={classes.search_icon} />
             </div>
           </div>
-          <div className="nav-3">
-            <div className="lang">
+          <div className={classes.nav_3}>
+            <div className={classes.lang}>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png"
                 alt="American flag"
@@ -73,19 +73,19 @@ const Header = () => {
               <p>EN</p>
               <FaCaretDown />
             </div>
-            <div className="sign-in">
-              <p className="hello">Hello, sign in</p>
-              <p className="account">
+            <div className={classes.sign_in}>
+              <p className={classes.hello}>Hello, sign in</p>
+              <p className={classes.account}>
                 Account & Lists
                 <FaCaretDown />
               </p>
             </div>
-            <div className="order">
-              <p className="hello">Returns &</p>
-              <p className="account">Orders</p>
+            <div className={classes.order}>
+              <p className={classes.hello}>Returns &</p>
+              <p className={classes.account}>Orders</p>
             </div>
-            <div className="cart">
-              <IoCartOutline className="cart_logo" />
+            <div className={classes.cart}>
+              <IoCartOutline className={classes.cart_logo} />
               <p>Cart</p>
             </div>
           </div>

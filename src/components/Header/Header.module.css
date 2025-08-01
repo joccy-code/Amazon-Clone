@@ -1,6 +1,11 @@
+/* @import "tailwindcss"; */
+
 * {
   margin: 0;
   padding: 0;
+}
+li {
+  list-style-type: none;
 }
 .container {
   background-color: black;
@@ -16,12 +21,12 @@ img {
   width: 40px;
 }
 
-.nav-1 {
+.nav_1 {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
 }
-.nav-1 a img {
+.nav_1 a img {
   margin-top: 10px;
   height: 40px;
   width: auto;
@@ -35,29 +40,30 @@ img {
   color: grey;
 }
 
-.nav-2 {
+.nav_2 {
   display: flex;
   margin-top: 10px;
   height: 40px;
 }
+
 #all {
   background-color: #d4d4d4;
   width: 40px;
   height: 40px;
   border-radius: 5px 0 0 5px; /* top-left, top-right, bottom-right, bottom-left */
 }
-.search-input input {
+.search_input input {
   height: 35px;
   width: 520px;
 }
-.search-icon {
+.search_icon {
   width: 40px;
   height: 40px;
   background-color: #f3a847;
   color: black;
   border-radius: 0 5px 5px 0; /* top-left, top-right, bottom-right, bottom-left */
 }
-.nav-3 {
+.nav_3 {
   display: flex;
   height: 40px;
   /* margin-top: 13px; */
@@ -72,7 +78,7 @@ img {
   width: 30px;
 }
 
-.sign-in,
+.sign_in,
 .order,
 .cart {
   margin-top: 13px;
@@ -94,4 +100,17 @@ img {
 }
 .cart p {
   margin-top: 13px;
+}
+
+/* lower-header-css */
+.lower_container {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+}
+
+.lower_container ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
